@@ -10,5 +10,4 @@ enum Constants {
     public static let roundedRectCornerRadius = CGFloat(21)
   }
   
-  //Comment
 }

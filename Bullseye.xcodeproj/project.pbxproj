@@ -70,20 +70,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F6FC5FA2B13CC0400F07D75 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				5F6FC5F62B13BFF900F07D75 /* AppColor.swift */,
-				5F6FC5F82B13C26B00F07D75 /* AppGradient.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		5FC1AB4F2B11577000D77F03 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5FC1AB522B11580A00D77F03 /* Game.swift */,
 				5F299DA62B1E8B88001CBF39 /* Constants.swift */,
+				5F6FC5F62B13BFF900F07D75 /* AppColor.swift */,
+				5F6FC5F82B13C26B00F07D75 /* AppGradient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,8 +84,8 @@
 		5FC1AB502B11577E00D77F03 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5F299DA42B1E75F8001CBF39 /* PointsView.swift */,
 				5FDC66ED2B11049400331EBA /* ContentView.swift */,
+				5F299DA42B1E75F8001CBF39 /* PointsView.swift */,
 				5F6FC5FB2B15134500F07D75 /* TextViews.swift */,
 				5FC1AB612B136E0D00D77F03 /* BEBlueButton.swift */,
 				5F6FC5FD2B1537AF00F07D75 /* RoundedViews.swift */,
@@ -142,7 +135,6 @@
 				5FC1AB512B11579C00D77F03 /* App */,
 				5FC1AB4F2B11577000D77F03 /* Models */,
 				5FDC66F12B11049700331EBA /* Preview Content */,
-				5F6FC5FA2B13CC0400F07D75 /* Utilities */,
 				5FC1AB502B11577E00D77F03 /* Views */,
 			);
 			path = Bullseye;

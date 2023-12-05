@@ -17,7 +17,7 @@ extension Color {
         default:
             (a, r, g, b) = (1, 1, 1, 0)
         }
-
+        
         self.init(
             .sRGB,
             red: Double(r) / 255,
@@ -30,11 +30,11 @@ extension Color {
 
 extension Color {
     static var buttonColor: Color {
-      .init(Color(hex: "#485AFC"))
+        .init(Color(hex: "#485AFC"))
     }
     
     static var backgroundColor: Color {
-      Color("BackgroundColor", bundle: .main)
+        Color("BackgroundColor", bundle: .main)
     }
 }
 

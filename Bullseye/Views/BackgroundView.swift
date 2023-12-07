@@ -19,6 +19,7 @@ struct BackgroundView: View {
 }
 
 struct TopView: View {
+    @State private var leaderboardIsPresented = false
     @Binding var game: Game
     
     var body: some View {
@@ -27,7 +28,16 @@ struct TopView: View {
                 RoundedImageViewStroked(symbol: "arrow.counterclockwise")
             }
             Spacer()
-            RoundedImageViewFilled(symbol: "list.bullet")
+            Button {
+                leaderboardIsPresented = true
+            } label: {
+                RoundedImageViewFilled(symbol: "list.bullet")
+            }
+            .disabled(game.leaderboardEntries.isEmpty)
+            .opacity(game.leaderboardEntries.isEmpty ? 0.8 : 1)
+            .sheet(isPresented: $leaderboardIsPresented, content: {
+                LeaderBoardView(leaderboardIsPresented: $leaderboardIsPresented, game: $game)
+            })
         }
     }
 }
@@ -79,5 +89,5 @@ struct RingsView: View {
 }
 
 #Preview {
-    BackgroundView(game: .constant(Game(target: 30, score: 100, round: 3)))
+    BackgroundView(game: .constant(Game()))
 }

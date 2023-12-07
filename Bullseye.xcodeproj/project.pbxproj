@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F299DA52B1E75F8001CBF39 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F299DA42B1E75F8001CBF39 /* PointsView.swift */; };
 		5F299DA72B1E8B88001CBF39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F299DA62B1E8B88001CBF39 /* Constants.swift */; };
+		5F299DA92B1F1912001CBF39 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F299DA82B1F1912001CBF39 /* LeaderBoardView.swift */; };
 		5F6FC5F72B13BFF900F07D75 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FC5F62B13BFF900F07D75 /* AppColor.swift */; };
 		5F6FC5F92B13C26B00F07D75 /* AppGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FC5F82B13C26B00F07D75 /* AppGradient.swift */; };
 		5F6FC5FC2B15134500F07D75 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FC5FB2B15134500F07D75 /* TextViews.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		5F299DA42B1E75F8001CBF39 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		5F299DA62B1E8B88001CBF39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5F299DA82B1F1912001CBF39 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		5F6FC5F62B13BFF900F07D75 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		5F6FC5F82B13C26B00F07D75 /* AppGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGradient.swift; sourceTree = "<group>"; };
 		5F6FC5FB2B15134500F07D75 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5FDC66ED2B11049400331EBA /* ContentView.swift */,
+				5F299DA82B1F1912001CBF39 /* LeaderBoardView.swift */,
 				5F299DA42B1E75F8001CBF39 /* PointsView.swift */,
 				5F6FC5FB2B15134500F07D75 /* TextViews.swift */,
 				5FC1AB612B136E0D00D77F03 /* BEBlueButton.swift */,
@@ -260,6 +263,7 @@
 				5F299DA72B1E8B88001CBF39 /* Constants.swift in Sources */,
 				5F6FC5F72B13BFF900F07D75 /* AppColor.swift in Sources */,
 				5FDC66EE2B11049400331EBA /* ContentView.swift in Sources */,
+				5F299DA92B1F1912001CBF39 /* LeaderBoardView.swift in Sources */,
 				5FC1AB532B11580A00D77F03 /* Game.swift in Sources */,
 				5F6FC5FE2B1537AF00F07D75 /* RoundedViews.swift in Sources */,
 				5FDC66EC2B11049400331EBA /* BullseyeApp.swift in Sources */,
@@ -455,11 +459,12 @@
 				DEVELOPMENT_TEAM = J9BWXBY6SC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bull's Eye";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,11 +489,12 @@
 				DEVELOPMENT_TEAM = J9BWXBY6SC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bull's Eye";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

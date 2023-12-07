@@ -44,6 +44,20 @@ struct RoundedRectTextView:View {
     }
 }
 
+struct RoundedTextView:View {
+    var text: Int
+    var body: some View {
+        Text(String(text))
+            .font(.title3)
+            .bold()
+            .frame(width: Constants.General.roundedViewLength, height: Constants.General.roundedViewLength)
+            .background {
+                Circle()
+                    .strokeBorder(.leaderBoardRow, lineWidth: Constants.General.strokeWidth)
+            }
+    }
+}
+
 struct PreviewView: View {
     var body: some View {
         VStack(spacing: 50){
@@ -60,6 +74,11 @@ struct PreviewView: View {
             HStack(spacing: 50){
                 RoundedRectTextView(text: "999")
                 RoundedRectTextView(text: "12")
+            }
+            
+            HStack(spacing: 50){
+                RoundedTextView(text: 1)
+                RoundedTextView(text: 12)
             }
         }
     }
